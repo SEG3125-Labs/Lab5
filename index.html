@@ -298,10 +298,12 @@
 
               <h3>Select a Date and Time for Your Service:</h3>
               <!-- <input type="date" id="date1" name="date" required> -->
-              <p>Date: <input type="text" id="datepicker1"></p>
-              <br />
-              <br />
-              <p>Time: <input type="time" id="time1" name="time" required></p>
+              <p id="noExpertSelectedMessage">Please select an expert first...</p>
+              <div id="dateTime" class="hidden">
+                <p>Date: <input type="text" id="datepicker1"></p>
+                <p>Time: <input type="time" id="time1" name="time" required></p>
+              </div>
+              
               <br />
               <br />
               <div class="form-group">

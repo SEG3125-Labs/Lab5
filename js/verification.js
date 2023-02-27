@@ -54,6 +54,8 @@ document.getElementById("toastbtn").onclick = function() {
     });
 
     $("input[type=radio][name=expert]").on("change", function(){
+      $('#noExpertSelectedMessage').hide();
+      $('#dateTime').removeClass("hidden");
       var person = this.value;
       $( "#datepicker1" ).datepicker(
         {

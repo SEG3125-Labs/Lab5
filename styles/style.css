@@ -12,3 +12,6 @@
 .error {
     border-color : red;
   }
+  .hidden {
+    display: none;
+  }
