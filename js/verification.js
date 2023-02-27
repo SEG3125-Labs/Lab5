@@ -57,6 +57,7 @@ document.getElementById("toastbtn").onclick = function() {
       $('#noExpertSelectedMessage').hide();
       $('#dateTime').removeClass("hidden");
       var person = this.value;
+      $("#datepicker1").datepicker("destroy");
       $( "#datepicker1" ).datepicker(
         {
             dateFormat: setDateFormat,
