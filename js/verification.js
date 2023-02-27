@@ -37,9 +37,11 @@ document.getElementById("toastbtn").onclick = function() {
       if (!validatePhone("exampleInputPhone")){
           alert("Format of phone number should be xxx-xxx-xxxx");
           $("#exampleInputPhone").addClass("error");
+          $("#toastbtn").attr('disabled','disabled');
       }
       else {
           $("#exampleInputPhone").removeClass("error");
+          $("#toastbtn").removeAttr('disabled');
       }
     });
 
